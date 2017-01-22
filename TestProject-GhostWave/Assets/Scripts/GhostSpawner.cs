@@ -6,6 +6,7 @@ public class GhostSpawner : MonoBehaviour {
 
 	public float spawnDelayMs;
 	public string[] ghostResNames;
+	public int maxGhosts;
 
 	private float mCurrDelayMs = 0;
 	private Bounds mBounds;
@@ -20,7 +21,9 @@ public class GhostSpawner : MonoBehaviour {
 		mCurrDelayMs += Time.deltaTime * 1000;
 		while (mCurrDelayMs > spawnDelayMs) {
 			mCurrDelayMs -= spawnDelayMs;
-			spawnGhost ();
+			if (GameObject.FindObjectsOfType<Ghost> ().Length < maxGhosts) {
+				spawnGhost ();
+			}
 		}
 	}
 
