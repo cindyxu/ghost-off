@@ -29,6 +29,7 @@ public static class Game {
 
 	public static void Play () {
 		if (sState != State.PLAYING) {
+			sState = State.PLAYING;
 			sPoints = 0;
 			enterPlayScene ();
 		}
@@ -46,6 +47,7 @@ public static class Game {
 
 	public static void GameOver () {
 		if (sState != State.GAME_OVER) {
+			sState = State.GAME_OVER;
 			enterGameOverScene ();
 		}
 	}

@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.04646437, g: 0.051227547, b: 0.05648023, a: 1}
+  m_IndirectSpecularColor: {r: 0.046481334, g: 0.05122993, b: 0.056613028, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -278,7 +278,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_Layer
-      value: 14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 14300000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_Radius
@@ -1564,7 +1564,24 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_PrefabInternal: {fileID: 160379582}
---- !u!114 &796702293
+--- !u!136 &796702293
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 796702292}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2
+  m_Height: 5
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &796702294 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+  m_PrefabInternal: {fileID: 160379582}
+--- !u!114 &796702295
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1575,10 +1592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64455f26e49094c60ad7f123304b94c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &796702294 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-  m_PrefabInternal: {fileID: 160379582}
+  dieClip: {fileID: 8300000, guid: 72e2ac40d2b11438b93909f04bd02599, type: 3}
 --- !u!114 &796702297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2454,21 +2468,6 @@ CapsuleCollider:
   m_Height: 0.0137468595
   m_Direction: 1
   m_Center: {x: 0.008042313, y: 0.0045671402, z: 0.00026821543}
---- !u!1 &1486660251 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-  m_PrefabInternal: {fileID: 160379582}
---- !u!114 &1486660252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1486660251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64455f26e49094c60ad7f123304b94c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1498893326
 GameObject:
   m_ObjectHideFlags: 0
@@ -2479,7 +2478,7 @@ GameObject:
   - component: {fileID: 1498893327}
   - component: {fileID: 1498893328}
   - component: {fileID: 1498893330}
-  m_Layer: 14
+  m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}

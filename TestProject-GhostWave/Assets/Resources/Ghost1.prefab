@@ -1139,10 +1139,10 @@ ParticleSystem:
       maxGradient:
         key0:
           serializedVersion: 2
-          rgba: 4294967295
+          rgba: 4284874675
         key1:
           serializedVersion: 2
-          rgba: 16777215
+          rgba: 10724096
         key2:
           serializedVersion: 2
           rgba: 16777215
