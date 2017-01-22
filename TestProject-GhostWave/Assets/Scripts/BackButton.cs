@@ -14,8 +14,7 @@ public class BackButton : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Vector3 screenPos = Input.mousePosition;
-		if (Input.GetMouseButtonUp (0) && 
-			RectTransformUtility.RectangleContainsScreenPoint (mRectTransform, screenPos)) {
+		if (Input.GetMouseButtonUp (0)) {
 			Game.Title ();
 		}
 	}
