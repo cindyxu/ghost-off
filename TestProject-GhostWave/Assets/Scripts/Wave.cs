@@ -14,11 +14,13 @@ public class Wave : MonoBehaviour {
 			Destroy (transform.gameObject);
 		}
 	}
-	
+
 	void OnTriggerEnter (Collider other) {
+		Vector3 pos	= transform.position;
 		Destroy (transform.gameObject);
 		if (other.GetComponentInParent<Ghost> () != null) {
 			Destroy (other.transform.parent.gameObject);
+			AudioSource.PlayClipAtPoint ((AudioClip) Resources.Load("Sounds/Points"), pos);
 		}
 	}
 

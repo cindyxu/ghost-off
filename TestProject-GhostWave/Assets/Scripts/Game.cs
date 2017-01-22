@@ -8,7 +8,9 @@ public static class Game {
 	public enum State {
 		TITLE,
 		PLAYING,
-		GAME_OVER
+		GAME_OVER,
+		HOW_TO_PLAY,
+		CREDITS
 	}
 
 	public static int pointAccum = 100;
@@ -54,6 +56,28 @@ public static class Game {
 
 	private static void enterGameOverScene () {
 		SceneManager.LoadScene ("GameOver");
+	}
+
+	public static void HowToPlay () {
+		if (sState != State.HOW_TO_PLAY) {
+			sState = State.HOW_TO_PLAY;
+			enterHowToPlayScene ();
+		}
+	}
+
+	private static void enterHowToPlayScene () {
+		SceneManager.LoadScene ("HowToPlay");
+	}
+
+	public static void Credits () {
+		if (sState != State.CREDITS) {
+			sState = State.CREDITS;
+			enterCreditsScene ();
+		}
+	}
+
+	private static void enterCreditsScene () {
+		SceneManager.LoadScene ("Credits");
 	}
 
 }

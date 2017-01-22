@@ -19,13 +19,15 @@ public class WaveEmitter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (mLastEmission + minDelayMs < Time.time * 1000) {
-			if (Input.GetKeyDown (KeyCode.Alpha1)) {
-				emitWave (1);
-			} else if (Input.GetKeyDown (KeyCode.Alpha2)) {
-				emitWave (2);
-			} else if (Input.GetKeyDown (KeyCode.Alpha3)) {
-				emitWave (3);
-			}
+			if (Input.GetMouseButton(0))
+				emitWave(1);
+
+			else if (Input.GetMouseButton(1))
+				emitWave(3);
+
+			else if (Input.GetMouseButton(2))
+				emitWave(2);
+			
 		}
 	}
 

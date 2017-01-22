@@ -48,7 +48,9 @@ public class TitleController : MonoBehaviour {
 			if (mCurrSelection == startSelection) {
 				Game.Play ();
 			} else if (mCurrSelection == howToPlaySelection) {
+				Game.HowToPlay ();
 			} else if (mCurrSelection == creditsSelection) {
+				Game.Credits ();
 			}
 		}
 	}
