@@ -8,12 +8,7 @@ public class WaveEmitter : MonoBehaviour {
 	public float emitForce;
 	public float emitTorque;
 
-	public string attk1WaveResName;
-	public string attk2WaveResName;
-	public string attk3WaveResName;
-
 	private AudioSource mAudioSource;
-
 	private float mLastEmission = Mathf.NegativeInfinity;
 
 	// Use this for initialization
